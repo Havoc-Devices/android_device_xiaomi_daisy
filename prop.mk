@@ -93,6 +93,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1 \
 persist.vendor.dpm.feature=0
 
+# EBPF
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.kernel.ebpf.supported=true
+
 # Coresight
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.coresight.config=stm-events
