@@ -1,4 +1,6 @@
-allow gmscore_app vendor_file:file { read open };
+allow gmscore_app vendor_file:file { read open getattr };
 allow gmscore_app exported_camera_prop:file read;
-allow gmscore_app vendor_camera_prop:file read;
+allow gmscore_app vendor_camera_prop:file { read open getattr };
 allow gmscore_app hal_memtrack_hwservice:hwservice_manager find;
+allow gmscore_app blkio_dev:dir search;
+allow gmscore_app hal_memtrack_default:binder call;

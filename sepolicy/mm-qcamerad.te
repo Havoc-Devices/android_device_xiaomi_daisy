@@ -13,9 +13,10 @@ allow mm-qcamerad vendor_camera_data_file:file { getattr };
 allow mm-qcamerad vendor_camera_prop:file { open read getattr };
 
 set_prop(mm-qcamerad, vendor_camera_prop);
-allow mm-qcamerad diag_device:chr_file { read write open };
+allow mm-qcamerad diag_device:chr_file { read write open ioctl };
 get_prop(mm-qcamerad, camera_prop)
 set_prop(mm-qcamerad, camera_prop)
 get_prop(mm-qcamerad, vendor_persist_camera_prop)
 set_prop(mm-qcamerad, vendor_persist_camera_prop)
 
+allow mm-qcamerad vfat:dir search;

@@ -5,3 +5,5 @@ userdebug_or_eng(`
 ')
 
 dontaudit hal_graphics_composer_default diag_device:chr_file rw_file_perms;
+
+allow hal_graphics_composer_default mnt_vendor_file:dir getattr;
