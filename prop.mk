@@ -297,6 +297,12 @@ persist.vendor.usb.config.extra=none
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
 
+# ZRAM
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.zram.mark_idle_delay_mins=60 \
+ro.zram.first_wb_delay_mins=180 \
+ro.zram.periodic_wb_delay_hours=24
+    
 # Zygote preforking
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
 persist.device_config.runtime_native.usap_pool_enabled=true
