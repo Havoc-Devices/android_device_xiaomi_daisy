@@ -1,0 +1,17 @@
+[
+ {
+   "repository": "android_kernel_xiaomi_daisy",
+   "target_path": "kernel/xiaomi/daisy",
+   "branch": "rename-280"
+ },
+ {
+   "repository": "android_vendor_xiaomi_daisy",
+   "target_path": "vendor/xiaomi",
+   "branch": "eleven"
+ },
+ {
+   "repository": "android_vendor_miuicamera_daisy",
+   "target_path": "vendor/MiuiCamera",
+   "branch": "eleven"
+ }
+]

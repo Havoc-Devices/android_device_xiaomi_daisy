@@ -185,6 +185,9 @@ TARGET_PER_MGR_ENABLED := true
 TARGET_PROVIDES_POWERHAL := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 

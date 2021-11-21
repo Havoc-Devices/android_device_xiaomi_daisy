@@ -49,6 +49,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-
-#HavocOS Build
-HAVOC_BUILD_TYPE := OFFICIAL
