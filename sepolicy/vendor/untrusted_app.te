@@ -7,3 +7,7 @@ allow untrusted_app proc_tty_drivers:file r_file_perms;
 allow untrusted_app qemu_hw_prop:file r_file_perms;
 allow untrusted_app qemu_sf_lcd_density_prop:file read;
 allow untrusted_app serialno_prop:file r_file_perms;
+allow untrusted_app zygote:unix_stream_socket getopt;
+allow untrusted_app proc_net:file rw_file_perms;
+allow untrusted_app app_data_file:lnk_file read;
+allow untrusted_app system_lib_file:file execmod;
