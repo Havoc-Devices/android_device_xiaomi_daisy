@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2022 RiceDroid
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,22 +30,26 @@ $(call inherit-product, vendor/custom/prebuilts/config.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common Syberia stuff.
-$(call inherit-product, vendor/syberia/common.mk)
+# Inherit some common Havoc-OS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := syberia_daisy
+PRODUCT_NAME := havoc_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
+#Havoc-OS Configs
+HAVOC_MAINTAINER := LuPe (lupesoltec)
+HAVOC_GROUP_URL := https://t.me/havoc_daisy
+HAVOC_BUILD_TYPE := OFFICIAL
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SHIP_GCAM_GO := false
-TARGET_SUPPORTS_QUICK_TAP := true
-
-#Syberia
-SYBERIA_BUILD_TYPE := OFFICIAL
+TARGET_ENABLE_BLUR := false
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false

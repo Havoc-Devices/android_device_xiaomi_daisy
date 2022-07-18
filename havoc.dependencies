@@ -1,0 +1,17 @@
+[
+ {
+   "repository": "android_kernel_xiaomi_daisy",
+   "target_path": "kernel/xiaomi/daisy",
+   "branch": "twelve"
+ },
+ {
+   "repository": "android_vendor_xiaomi_daisy",
+   "target_path": "vendor/xiaomi",
+   "branch": "twelve"
+ },
+ {
+   "repository": "android_vendor_custom_prebuilts_daisy",
+   "target_path": "vendor/custom/prebuilts",
+   "branch": "master"
+ }
+]

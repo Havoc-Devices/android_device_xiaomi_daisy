@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2022 Havoc-OS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_daisy.mk
+    $(LOCAL_DIR)/havoc_daisy.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_daisy-user \
-    syberia_daisy-userdebug \
-    syberia_daisy-eng
+    havoc_daisy-user \
+    havoc_daisy-userdebug \
+    havoc_daisy-eng
