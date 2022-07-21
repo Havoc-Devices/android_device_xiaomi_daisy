@@ -3,10 +3,5 @@
    "repository": "android_kernel_xiaomi_daisy",
    "target_path": "kernel/xiaomi/daisy",
    "branch": "twelve"
- },
- {
-   "repository": "android_vendor_xiaomi_daisy",
-   "target_path": "vendor/xiaomi",
-   "branch": "twelve"
  }
 ]
